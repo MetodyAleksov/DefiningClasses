@@ -1,14 +1,16 @@
 ﻿using System;
 
-namespace DefiningClasses
+namespace CarManufacturer
 {
-    class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {
-            Car car = new Car("VW", "Mk3", 1992);
-            Console.WriteLine(car.ToString());
+            Car car = new Car();
+            car.Make = "Golf";
+            car.Model = "MK3";
+            car.Year = 1992;
+            Console.WriteLine($"{car.Make}");
         }
     }
-
 }
